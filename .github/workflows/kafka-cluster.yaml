@@ -40,11 +40,11 @@ jobs:
      - name: Terraform plan
        id: plan
        if: github.event_name == 'pull_request'
-       run: terraform plan -no-color -var-file="env/cluster.tfvars" -input=false -out tf.plan
+       run: terraform plan -no-color -var-file="env/cluster.tfvars" -input=false
        continue-on-error: true
      - name: Terraform Plan Status
        if: steps.plan.outcome == 'failure'
        run: exit 1
      - name: Terraform Apply
        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-       run: terraform apply -var-file="env/cluster.tfvars" -auto-approve -input=false tf.plan
+       run: terraform apply -var-file="env/cluster.tfvars" -auto-approve -input=false
