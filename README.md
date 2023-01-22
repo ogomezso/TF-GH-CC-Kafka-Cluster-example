@@ -50,3 +50,7 @@ When a new PR is created the action will:
 ### 2. PR Merged (Main commit push)
 
 Apply the terraform plan using Google Storage Bucket for state storage as configured on `backend.tf`.
+
+## Demo Video
+
+[Demo](https://drive.google.com/file/d/1E03T7vHpH_8fWbyfGbXPbRLG21uLhV_4/view?usp=sharing)
