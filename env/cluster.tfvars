@@ -1,7 +1,7 @@
 environment = "env-q26337"
 
 cluster = {
-    display_name = "devops-webinar-standard-cluster-test"
+    display_name = "devops-webinar-standard-cluster"
     availability = "SINGLE_ZONE"
     cloud        = "GCP"
     region       = "europe-west3"
